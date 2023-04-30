@@ -1,0 +1,26 @@
+﻿@model string
+@{
+    ViewData["Title"] = "Login";
+}
+<div class="d-flex justify-content-center">
+        <a class="menu-btn" href="/Home/Index">Home</a> |
+        <a class="menu-btn" href="/Home/Register">Register</a> |
+        <a class="menu-btn" href="/Home/Login">Login</a>
+    </div>
+<h1>Login</h1>
+
+<form asp-controller="Home" asp-action="Login" method="post">
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" name="username">
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password">
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+    {
+        <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+    }
+</form>

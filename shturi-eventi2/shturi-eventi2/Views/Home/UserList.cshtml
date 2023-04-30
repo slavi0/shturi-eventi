@@ -1,0 +1,21 @@
+﻿@model shturi_eventi2.Models.ViewModels.UserListModel;
+
+@{
+    ViewData["Title"] = "Event List";
+}
+
+<h1>@ViewData["Title"]</h1>
+<a href="@Url.Action("CreateUser", "Home")" class="btn btn-primary">Create user</a>
+<ul>
+    @foreach (var user in Model.Users)
+    {
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">@user.Username</h5>
+                <a href="@Url.Action("UserInfo", "Home", new { userId = user.Id })" class="btn btn-primary">User Info</a>
+                <a href="@Url.Action("UserInfoSaved", "Home", new { userId = user.Id })" class="btn btn-primary">Delete </a>
+            </div>
+        </div>
+
+    }
+</ul>

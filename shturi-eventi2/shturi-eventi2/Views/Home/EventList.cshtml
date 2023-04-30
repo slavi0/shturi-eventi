@@ -1,0 +1,22 @@
+﻿@model shturi_eventi2.Models.ViewModels.EventListModel;
+
+@{
+    ViewData["Title"] = "Event List";
+}
+
+<h1>@ViewData["Title"]</h1>
+<a href="@Url.Action("CreateEvent", "Home")" class="btn btn-primary">Create Event</a>
+<ul>
+    @foreach (var event1 in Model.Events)
+    {
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">@event1.Name</h5>
+                <p class="card-text">@event1.Description</p>
+                <a href="@Url.Action("EventInfo", "Home", new { eventId = event1.Id })" class="btn btn-primary">Event Info</a>
+                <a href="@Url.Action("EventInfoSaved", "Home", new { eventId = event1.Id })" class="btn btn-primary">Delete Event</a>
+            </div>
+        </div>
+
+    }
+</ul>

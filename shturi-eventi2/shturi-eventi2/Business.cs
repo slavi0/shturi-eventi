@@ -78,5 +78,86 @@ namespace shturi_eventi2
             db.Events.Add(event1);
             db.SaveChanges();
         }
+        public User GetUserById(int id)
+        {
+            User user = db.Users.First(u => u.Id == id);
+            return user;
+        }
+        public void UpdateUser(User user)
+        {
+            User oldUser = db.Users.First(u => u.Id == user.Id);
+            oldUser.Username = user.Username;
+            oldUser.FirstName= user.FirstName;
+            oldUser.LastName= user.LastName;
+            db.SaveChanges();
+        }
+        public void AddUser(User user)
+        {
+            db.Users.Add(user);
+            db.SaveChanges();
+        }
+        public void RemoveUserById(int id)
+        {
+            db.Users.Remove(GetUserById(id));
+            db.SaveChanges();
+        }
+        public void AddTicket(Ticket ticket)
+        {
+            db.Tickets.Add(ticket);
+            db.SaveChanges();
+        }
+        public List<Ticket> GetTicketsByUserId(int userId)
+        {
+            List<Ticket> tickets = db.Tickets.Where(t => t.UserId == userId).ToList();
+            return tickets;
+        }
+        public List<Event> GetEventsForUser(int userId)
+        {
+            List<Ticket> tickets = GetTicketsByUserId(userId);
+            List<Event> events = new List<Event>();
+            foreach (Ticket ticket in tickets)
+            {
+                events = events.Concat(db.Events.Where(e => e.Id == ticket.EventId).ToList()).ToList();
+            }
+            return events;
+        }
+        public void RemoveTicketByTwoId(int eventId, int userId)
+        {
+            Ticket ticket = db.Tickets.First(t => t.EventId == eventId && t.UserId == userId);
+            db.Remove(ticket);
+            db.SaveChanges();
+        }
+        public string GetEventNameByTicket(Ticket ticket)
+        {
+            Event event1 = db.Events.First(e => e.Id == ticket.EventId);
+            return event1.Name;
+        }
+        public string GetUserNameByTicket(Ticket ticket)
+        {
+            User user = db.Users.First(u => u.Id == ticket.UserId);
+            return user.Username;
+        }
+        public List<Ticket> GetAllTickets()
+        {
+            List<Ticket> tickets = db.Tickets.ToList();
+            return tickets;
+        }
+        public Ticket GetTicketById(int ticketId)
+        {
+            Ticket ticket = db.Tickets.FirstOrDefault(t => t.Id == ticketId);
+            return ticket;
+        }
+        public int GetEventCount()
+        {
+            return db.Events.Count();
+        }
+        public int GetUserCount()
+        {
+            return db.Users.Count();
+        }
+        public int GetTicketCount()
+        {
+            return db.Tickets.Count();
+        }
     }
 }

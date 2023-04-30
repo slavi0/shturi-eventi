@@ -1,1 +1,8 @@
-﻿
+﻿@model shturi_eventi2.Models.User
+
+<div class="text-center">
+    <div class="d-flex justify-content-center">
+        <a class="menu-btn" href="/Home/UserEventList?userId=@Model.Id">Events</a> |
+        <a class="menu-btn" href="/Home/TicketList?userId=@Model.Id">Tickets</a> |
+    </div>
+</div>

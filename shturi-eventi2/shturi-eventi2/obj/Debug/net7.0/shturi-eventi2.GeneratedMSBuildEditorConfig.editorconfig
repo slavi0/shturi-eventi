@@ -20,6 +20,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVFdmVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/HP/Desktop/github-projects/vacation-manager/vm-code/shturi-eventi2/shturi-eventi2/Views/Home/CreateUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/HP/Desktop/github-projects/vacation-manager/vm-code/shturi-eventi2/shturi-eventi2/Views/Home/EventInfo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFdmVudEluZm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -30,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/HP/Desktop/github-projects/vacation-manager/vm-code/shturi-eventi2/shturi-eventi2/Views/Home/EventList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFdmVudExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/github-projects/vacation-manager/vm-code/shturi-eventi2/shturi-eventi2/Views/Home/GetTicket.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZXRUaWNrZXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/HP/Desktop/github-projects/vacation-manager/vm-code/shturi-eventi2/shturi-eventi2/Views/Home/Index.cshtml]
@@ -54,6 +62,34 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/HP/Desktop/github-projects/vacation-manager/vm-code/shturi-eventi2/shturi-eventi2/Views/Home/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/github-projects/vacation-manager/vm-code/shturi-eventi2/shturi-eventi2/Views/Home/RemoveTicket.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZW1vdmVUaWNrZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/github-projects/vacation-manager/vm-code/shturi-eventi2/shturi-eventi2/Views/Home/RemoveTicketAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZW1vdmVUaWNrZXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/github-projects/vacation-manager/vm-code/shturi-eventi2/shturi-eventi2/Views/Home/TicketList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUaWNrZXRMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/github-projects/vacation-manager/vm-code/shturi-eventi2/shturi-eventi2/Views/Home/TicketListAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUaWNrZXRMaXN0QWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/github-projects/vacation-manager/vm-code/shturi-eventi2/shturi-eventi2/Views/Home/UserEventList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyRXZlbnRMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/github-projects/vacation-manager/vm-code/shturi-eventi2/shturi-eventi2/Views/Home/UserInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VySW5mby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/github-projects/vacation-manager/vm-code/shturi-eventi2/shturi-eventi2/Views/Home/UserInfoSaved.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VySW5mb1NhdmVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/HP/Desktop/github-projects/vacation-manager/vm-code/shturi-eventi2/shturi-eventi2/Views/Home/UserList.cshtml]

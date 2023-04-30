@@ -1,6 +1,13 @@
-﻿<div class="text-center">
+﻿@model shturi_eventi2.Models.ViewModels.MainPageAdminModel
+
+    
+<div class="text-center">
     <div class="d-flex justify-content-center">
         <a class="menu-btn" href="/Home/EventList">Events</a> |
         <a class="menu-btn" href="/Home/UserList">Users</a> |
+        <a class="menu-btn" href="/Home/TicketListAdmin">All tickets</a> 
+    </div>
+    <div>
+        Users: @Model.UserCount     |    Events: @Model.eventCount    |    Tickets: @Model.TicketCount
     </div>
 </div>
